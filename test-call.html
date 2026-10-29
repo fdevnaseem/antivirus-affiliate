@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Test call page | ShieldPick</title>
+  <meta name="description" content="Isolated learning page for call-click tracking. Not a support line.">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    .test-banner { background: #fcefd6; border: 1px solid #e0c07a; border-radius: 14px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+    .test-banner strong { color: #8a5a00; }
+    .call-card { border: 1px solid #e0e6ec; border-radius: 14px; padding: 1.5rem; background: #fff; box-shadow: 0 1px 2px rgba(15,30,46,.06), 0 8px 24px rgba(15,30,46,.06); max-width: 34rem; }
+    .call-number { font-size: 1.6rem; font-weight: 800; margin: .5rem 0 1rem; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">ShieldPick</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Site</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary header-cta" href="dashboard.html">View dashboard</a>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap" style="padding: 2rem 0 3rem;">
+      <h1>Test call page</h1>
+      <div class="test-banner">
+        <strong>TEST ONLY — not a support line, not Norton, not McAfee.</strong>
+        This page exists only to learn call-click tracking. The number below is a dummy test number.
+        Do not use this page, or a page like it, as a “support / install help / activation” call button on a
+        third-party antivirus site — that is the pattern Google restricts, and it is why there is no call
+        button on the main comparison pages.
+      </div>
+      <div class="call-card">
+        <p>Dummy test number</p>
+        <p class="call-number">+880 1000-000000</p>
+        <!-- data-location is read by tracking.js; the tap is stored as call_click. -->
+        <a class="btn btn-primary" href="tel:+8801000000000" data-location="test-call">Tap to test a call click</a>
+        <p style="margin-top:1rem;">After tapping, open <a href="dashboard.html">dashboard.html</a> and refresh.
+        You will see one more <code>call_click</code>. That proves a tap, not that a call was answered.
+        Answered-call counting needs a forwarding number or a call provider that logs the call itself.</p>
+      </div>
+      <p style="margin-top:1.5rem;"><a href="index.html">Back to site</a> &middot; <a href="dashboard.html">Back to dashboard</a></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="muted">ShieldPick test page. Independent comparison site. Not affiliated with Norton or McAfee.</p>
+    </div>
+  </footer>
+  <script src="assets/tracking.js" defer></script>
+</body>
+</html>

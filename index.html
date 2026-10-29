@@ -98,7 +98,7 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
-      <a class="btn btn-primary header-cta" href="#deals">See deals</a>
+      <a class="btn btn-primary header-cta" href="#deals" data-track="nav_click" data-location="header">See deals</a>
     </div>
   </header>
 
@@ -111,8 +111,8 @@
           <p class="hero-lede">Compare the plans side by side, see what you'll pay after year one, and buy directly from
             the vendor.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#deals">Compare deals</a>
-            <a class="btn btn-ghost" href="#fit">Find my fit</a>
+            <a class="btn btn-primary" href="#deals" data-track="nav_click" data-location="hero">Compare deals</a>
+            <a class="btn btn-ghost" href="#fit" data-track="nav_click" data-location="hero">Find my fit</a>
           </div>
           <ul class="hero-assurances">
             <li><svg class="icon">
@@ -168,7 +168,7 @@
             <p class="deal-was"><s>$94.99</s> regular price</p>
             <p class="deal-price"><strong>$2.50</strong><span>/mo</span></p>
             <p class="deal-billed">$29.99 billed for the first year</p>
-            <a class="btn btn-ghost btn-block" data-offer="norton" href="https://us.norton.com/">Get this deal</a>
+            <a class="btn btn-ghost btn-block" data-location="deals" data-offer="norton" href="https://us.norton.com/">Get this deal</a>
             <ul class="checks">
               <li><svg class="icon">
                   <use href="#i-check" />
@@ -197,7 +197,7 @@
             <p class="deal-was"><s>$119.99</s> regular price</p>
             <p class="deal-price"><strong>$4.17</strong><span>/mo</span></p>
             <p class="deal-billed">$49.99 billed for the first year</p>
-            <a class="btn btn-primary btn-block" data-offer="norton" href="https://us.norton.com/">Get this deal</a>
+            <a class="btn btn-primary btn-block" data-location="deals" data-offer="norton" href="https://us.norton.com/">Get this deal</a>
             <ul class="checks">
               <li><svg class="icon">
                   <use href="#i-check" />
@@ -225,7 +225,7 @@
             <p class="deal-was"><s>$119.99</s> regular price</p>
             <p class="deal-price"><strong>$3.33</strong><span>/mo</span></p>
             <p class="deal-billed">$39.99 billed for the first year</p>
-            <a class="btn btn-ghost btn-block" data-offer="mcafee" href="https://www.mcafee.com/">Get this deal</a>
+            <a class="btn btn-ghost btn-block" data-location="deals" data-offer="mcafee" href="https://www.mcafee.com/">Get this deal</a>
             <ul class="checks">
               <li><svg class="icon">
                   <use href="#i-check" />
@@ -253,7 +253,7 @@
             <p class="deal-was"><s>$179.99</s> regular price</p>
             <p class="deal-price"><strong>$7.50</strong><span>/mo</span></p>
             <p class="deal-billed">$89.99 billed for the first year</p>
-            <a class="btn btn-ghost btn-block" data-offer="mcafee" href="https://www.mcafee.com/">Get this deal</a>
+            <a class="btn btn-ghost btn-block" data-location="deals" data-offer="mcafee" href="https://www.mcafee.com/">Get this deal</a>
             <ul class="checks">
               <li><svg class="icon">
                   <use href="#i-check" />
@@ -339,7 +339,7 @@
             <p class="verdict-name"></p>
             <p class="verdict-why"></p>
             <div class="verdict-actions">
-              <a class="btn btn-primary" data-verdict-go href="#deals">See offers</a>
+              <a class="btn btn-primary" data-verdict-go href="#deals" data-location="verdict">See offers</a>
               <a class="btn btn-ghost" href="#compare">Compare both</a>
             </div>
           </div>
@@ -438,8 +438,8 @@
             <tfoot>
               <tr>
                 <td></td>
-                <td><a class="btn btn-primary" data-offer="norton" href="https://us.norton.com/">Get Norton 360</a></td>
-                <td><a class="btn btn-primary" data-offer="mcafee" href="https://www.mcafee.com/">Get McAfee</a></td>
+                <td><a class="btn btn-primary" data-location="compare" data-offer="norton" href="https://us.norton.com/">Get Norton 360</a></td>
+                <td><a class="btn btn-primary" data-location="compare" data-offer="mcafee" href="https://www.mcafee.com/">Get McAfee</a></td>
               </tr>
             </tfoot>
           </table>
@@ -664,8 +664,8 @@
             <p>Grab this year's first-year discount while it lasts.</p>
           </div>
           <div class="actions">
-            <a class="btn btn-primary" data-offer="norton" href="https://us.norton.com/">Get Norton 360</a>
-            <a class="btn btn-ghost" data-offer="mcafee" href="https://www.mcafee.com/">Get McAfee</a>
+            <a class="btn btn-primary" data-location="closing" data-offer="norton" href="https://us.norton.com/">Get Norton 360</a>
+            <a class="btn btn-ghost" data-location="closing" data-offer="mcafee" href="https://www.mcafee.com/">Get McAfee</a>
           </div>
         </div>
       </div>
@@ -722,6 +722,7 @@
   </footer>
 
   <script src="assets/main.js" defer></script>
+  <script src="assets/tracking.js" defer></script>
 </body>
 
 </html>
